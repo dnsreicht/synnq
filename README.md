@@ -1,128 +1,167 @@
-API calls overview
+# SYNNQ DEVNET API Overview
 
-SYNNQ DEVNET API
-Base URL: https://rest.synnq.io
+**Base URL:** `https://rest.synnq.io`
 
+---
 
-Wallet Management:
+## Wallet Management
 
-Create Wallet: 
-POST /create_wallet
-Create a new wallet with a specified prefix.
+- **Create Wallet**
+  - **Method:** `POST`
+  - **Endpoint:** `/create_wallet`
+  - **Description:** Create a new wallet with a specified prefix.
 
-Retrieve Wallet: 
-POST /get_wallet
-Retrieve a wallet by its address.
+- **Retrieve Wallet**
+  - **Method:** `POST`
+  - **Endpoint:** `/get_wallet`
+  - **Description:** Retrieve a wallet by its address.
 
-Query Balance: 
-POST /query_balance
-Check the balance of a specific wallet.
+- **Query Balance**
+  - **Method:** `POST`
+  - **Endpoint:** `/query_balance`
+  - **Description:** Check the balance of a specific wallet.
 
-Retrieve Wallet from Mnemonic: 
-POST /retrieve_wallet_from_mnemonic
-Recover a wallet using a mnemonic phrase.
+- **Retrieve Wallet from Mnemonic**
+  - **Method:** `POST`
+  - **Endpoint:** `/retrieve_wallet_from_mnemonic`
+  - **Description:** Recover a wallet using a mnemonic phrase.
 
-Update Wallet Permissions: 
-POST /update_wallet_permissions
-Modify the permissions of a wallet.
+- **Update Wallet Permissions**
+  - **Method:** `POST`
+  - **Endpoint:** `/update_wallet_permissions`
+  - **Description:** Modify the permissions of a wallet.
 
-Update Wallet Role: 
-POST /update_wallet_role
-Change the role associated with a wallet.
+- **Update Wallet Role**
+  - **Method:** `POST`
+  - **Endpoint:** `/update_wallet_role`
+  - **Description:** Change the role associated with a wallet.
 
-Authenticate Wallet: 
-POST /authenticate
-Authenticate a wallet using SSO.
+- **Authenticate Wallet**
+  - **Method:** `POST`
+  - **Endpoint:** `/authenticate`
+  - **Description:** Authenticate a wallet using SSO.
 
-Verify Auth Token: 
-POST /verify_auth_token
-Validate an authentication token.
+- **Verify Auth Token**
+  - **Method:** `POST`
+  - **Endpoint:** `/verify_auth_token`
+  - **Description:** Validate an authentication token.
 
-Get Wallets Count: 
-GET /get_wallets_count
-Retrieve the total number of wallets.
+- **Get Wallets Count**
+  - **Method:** `GET`
+  - **Endpoint:** `/get_wallets_count`
+  - **Description:** Retrieve the total number of wallets.
 
-Get Wallets Holding Coin: 
-POST /get_wallets_holding_coin
-Get wallets holding a specific coin.
+- **Get Wallets Holding Coin**
+  - **Method:** `POST`
+  - **Endpoint:** `/get_wallets_holding_coin`
+  - **Description:** Get wallets holding a specific coin.
 
-Transactions:
+---
 
-Submit Transaction: 
-POST /transaction
-Process a transaction request.
+## Transactions
 
-Retrieve Transaction: 
-GET /get_transaction
-Fetch transaction details by hash.
+- **Submit Transaction**
+  - **Method:** `POST`
+  - **Endpoint:** `/transaction`
+  - **Description:** Process a transaction request.
 
-Blockchain & Governance:
+- **Retrieve Transaction**
+  - **Method:** `GET`
+  - **Endpoint:** `/get_transaction`
+  - **Description:** Fetch transaction details by hash.
 
-Get Block Height: 
-GET /block_height
-Retrieve the current block height.
+---
 
-Fetch DAG State: 
-GET /fetch_dag_state
-Get the state of the Directed Acyclic Graph (DAG) with optional pagination.
+## Blockchain & Governance
 
-Submit Governance Proposal: 
-POST /submit_proposal
-Propose changes in the governance system.
+- **Get Block Height**
+  - **Method:** `GET`
+  - **Endpoint:** `/block_height`
+  - **Description:** Retrieve the current block height.
 
-Vote on Proposal: 
-POST /vote_on_proposal
-Vote on a submitted governance proposal.
+- **Fetch DAG State**
+  - **Method:** `GET`
+  - **Endpoint:** `/fetch_dag_state`
+  - **Description:** Get the state of the Directed Acyclic Graph (DAG) with optional pagination.
 
-Retrieve Proposal: 
-GET /get_proposal
-Retrieve a governance proposal by ID.
+- **Submit Governance Proposal**
+  - **Method:** `POST`
+  - **Endpoint:** `/submit_proposal`
+  - **Description:** Propose changes in the governance system.
 
-Retrieve All Proposals: 
-GET /get_proposals
-Fetch all proposal IDs.
+- **Vote on Proposal**
+  - **Method:** `POST`
+  - **Endpoint:** `/vote_on_proposal`
+  - **Description:** Vote on a submitted governance proposal.
 
-Submit General Proposal: 
-POST /submit_general_proposal
-Submit a general non-governance proposal.
+- **Retrieve Proposal**
+  - **Method:** `GET`
+  - **Endpoint:** `/get_proposal`
+  - **Description:** Retrieve a governance proposal by ID.
 
-Vote on General Proposal: 
-POST /vote_on_general_proposal
-Vote on a general proposal.
+- **Retrieve All Proposals**
+  - **Method:** `GET`
+  - **Endpoint:** `/get_proposals`
+  - **Description:** Fetch all proposal IDs.
 
-Retrieve General Proposal: 
-GET /get_general_proposal
-Fetch a general proposal by ID.
+- **Submit General Proposal**
+  - **Method:** `POST`
+  - **Endpoint:** `/submit_general_proposal`
+  - **Description:** Submit a general non-governance proposal.
 
-Token & Coin Management:
+- **Vote on General Proposal**
+  - **Method:** `POST`
+  - **Endpoint:** `/vote_on_general_proposal`
+  - **Description:** Vote on a general proposal.
 
-Create Bearer Token: 
-POST /create_token
-Generate a new bearer token.
+- **Retrieve General Proposal**
+  - **Method:** `GET`
+  - **Endpoint:** `/get_general_proposal`
+  - **Description:** Fetch a general proposal by ID.
 
-Create Coin: 
-POST /create_coin
-Issue a new coin with specified attributes.
+---
 
-Mint Token: 
-POST /mint_token
-Mint new tokens for a given symbol.
+## Token & Coin Management
 
-Smart Contracts:
+- **Create Bearer Token**
+  - **Method:** `POST`
+  - **Endpoint:** `/create_token`
+  - **Description:** Generate a new bearer token.
 
-Execute Smart Contract: 
-POST /execute_contract
-Execute a method within a smart contract.
+- **Create Coin**
+  - **Method:** `POST`
+  - **Endpoint:** `/create_coin`
+  - **Description:** Issue a new coin with specified attributes.
 
-Deploy Smart Contract: 
-POST /deploy_contract
-Deploy a new smart contract.
+- **Mint Token**
+  - **Method:** `POST`
+  - **Endpoint:** `/mint_token`
+  - **Description:** Mint new tokens for a given symbol.
 
-Machine Learning:
+---
 
-Predict: 
-POST /predict
-Make predictions using a neural network model.
+## Smart Contracts
 
-Forecast: POST /forecast
-Generate forecasts using a neural network model.
+- **Execute Smart Contract**
+  - **Method:** `POST`
+  - **Endpoint:** `/execute_contract`
+  - **Description:** Execute a method within a smart contract.
+
+- **Deploy Smart Contract**
+  - **Method:** `POST`
+  - **Endpoint:** `/deploy_contract`
+  - **Description:** Deploy a new smart contract.
+
+---
+
+## Machine Learning
+
+- **Predict**
+  - **Method:** `POST`
+  - **Endpoint:** `/predict`
+  - **Description:** Make predictions using a neural network model.
+
+- **Forecast**
+  - **Method:** `POST`
+  - **Endpoint:** `/forecast`
+  - **Description:** Generate forecasts using a neural network model.
