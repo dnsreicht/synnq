@@ -1,0 +1,28 @@
+How to Use the SYNNQ Devnet and Create Your Own Wallet Address
+
+
+Overview
+
+This guide will show you how to use the SYNNQ Devnet to create your own wallet address using Postman. While you can also test directly on the Swagger website, Postman is recommended for its simplicity.
+
+Step 1: Set Up Postman
+- Create a Postman account: Sign up here.
+- Install the Postman desktop app and log in.
+- Create a new collection under your workspace in Postman.
+
+Step 2: Import SYNNQ API Commands
+- Click on "Import" in Postman.
+- Paste this URL to import all the POST and GET commands: https://synnq-swagger-f77aaphiwa-ew.a.run.app/api-docs.
+
+Important Notes
+POST commands require data in the Body.
+GET commands require data in the Header.
+
+Step 3: Create a Wallet
+- Navigate to "Create Wallet" under the imported collection.
+- Choose a prefix for your wallet address. Since this is a POST command, you’ll need to provide additional information in the Body. The prefix will appear at the beginning of your address, e.g., (prefix)7d7b7a1c4b3b7179e429be61cbace0b2dd15f48f.
+- Click on "Send" in the top right corner.
+
+
+
+And that’s it! You’ve just created your first wallet on SYNNQ
