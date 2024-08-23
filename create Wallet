@@ -3,7 +3,7 @@ How to Use the SYNNQ Devnet and Create Your Own Wallet Address
 
 Overview
 
-This guide will show you how to use the SYNNQ Devnet to create your own wallet address using Postman. While you can also test directly on the Swagger website, Postman is recommended for its simplicity.
+This guide will show you how to use the SYNNQ Devnet to create your own wallet address using Postman. While you can also test directly on the Swagger website (https://synnq-swagger-f77aaphiwa-ew.a.run.app/docs/), Postman is recommended for its simplicity.
 
 Step 1: Set Up Postman
 - Create a Postman account: Sign up here -> https://identity.getpostman.com/signup.
